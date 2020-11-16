@@ -1,0 +1,5 @@
+# Ignore hugo folders
+/content/
+/public/*
+/resources/
+/static/

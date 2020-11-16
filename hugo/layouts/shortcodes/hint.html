@@ -1,0 +1,10 @@
+  {{ $name := .Get 0 }}
+<blockquote class="book-hint {{ $name }}">
+  
+<span class="hint-svg" >
+  {{ readFile ( print "hintimages/" $name ".svg" ) | safeHTML  }}
+</span>
+<strong> {{ $name }}</strong><br>
+  
+  {{ .Inner | markdownify }}
+</blockquote>

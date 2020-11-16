@@ -1,0 +1,27 @@
+@mixin theme-dimensions {
+
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-500: #adb5bd;
+
+  --color-link: hsl(18, 92%, 53%); // accent 
+  --color-visited-link: hsl(18, 92%, 43%); //accent -10%
+
+  --body-background: white;
+  --body-font-color: black;
+  --nav-background: hsl(217, 7%, 27%); // sidebar-bg
+  --nav-font-color: hsl(200, 9%, 94%); // light
+  
+  --icon-filter: none;
+
+  --hint-color-info: #6bf;
+  --hint-color-note: #448aff;
+  --hint-color-tip: #42f59e;
+  --hint-color-warning: #ff9100;
+  --hint-color-danger: #f66;
+
+}
+
+:root {
+  @include theme-dimensions;
+}

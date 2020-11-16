@@ -1,0 +1,27 @@
+@mixin theme-voice {
+
+  --gray-100: #f8f9fa;
+  --gray-200: hsl(208, 27%, 85%);
+  --gray-500: #adb5bd;
+
+  --color-link: hsl(188, 72%, 41%); // accent 
+  --color-visited-link: hsl(188,72%,31%); //accent - 10%
+
+  --body-background: hsl(208, 27%, 95%); // body-bg
+  --body-font-color: hsl(260, 45%, 15%); // body-color
+  --nav-background: hsl(208, 24%, 20%); // sidebar-bg
+  --nav-font-color: hsl(208, 27%, 89%); // light or dark
+  
+  --icon-filter: none;
+
+  --hint-color-info: #6bf;
+  --hint-color-note: #667dff;
+  --hint-color-tip: #42f59e;
+  --hint-color-warning: #ff9100;
+  --hint-color-danger: #f66;
+ 
+}
+
+:root {
+  @include theme-voice;
+}
