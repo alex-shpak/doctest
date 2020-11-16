@@ -1,0 +1,43 @@
+baseURL: https://pfteststorage.z33.web.core.windows.net/
+title: Call Analytics
+theme: book
+
+# Book configuration
+disablePathToLower: true
+enableGitInfo: false
+disableKinds: ['taxonomy', 'taxonomyTerm']
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 1
+
+contentDir: ../customer-portal/content
+staticDir: ../customer-portal/images
+
+defaultContentLanguage: en
+enableMissingTranslationPlaceholders: true
+
+languages:
+  en:
+    languageName: English (US)
+    weight: 1
+  gb:
+    languageName: English (GB)
+    weight: 2
+
+params:
+# 'dimensions' for Dimensions, 'voice' for Dimensions Voice
+  BookTheme: dimensions
+# comment out for Dimensions
+#  BookLogo: img/voice-favicon.png
+
+  BookToC: true
+  BookSection: /
+  BookDateFormat: "Jan 2, 2006"
+  BookSearch: true
+  BookComments: false
+ 
+  
+
