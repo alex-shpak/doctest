@@ -1,0 +1,6 @@
+<div class="voice;"
+{{- if (ne .Site.Params.BookTheme "voice") -}}
+style="display: none"
+{{- end -}}> 
+    {{ .Inner | markdownify }}
+</div>

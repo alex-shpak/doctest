@@ -14,14 +14,19 @@
   
   --icon-filter: none;
 
-  --hint-color-info: #6bf;
-  --hint-color-note: #448aff;
-  --hint-color-tip: #42f59e;
-  --hint-color-warning: #ff9100;
-  --hint-color-danger: #f66;
 
 }
 
 :root {
   @include theme-dimensions;
 }
+
+$hint-colors: (
+  info: #000,
+  tip: #Aff,
+  note: #0f0,
+  warning: #0B0,
+  danger: #CC0,
+) !default;
+$font-size-base: 15px !default;
+$container-max-width: 90rem !default;
